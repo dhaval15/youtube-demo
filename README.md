@@ -26,9 +26,9 @@ Uri searchUrl(dynamic options) =>
 
 ## Library Used
 
-  - [http](pub.dev/packages/http)
-  - [flutter_bloc](pub.dev/packages/flutter_shimmer)
-  - [flutter_shimmer](pub.dev/packages/flutter_shimmer)
-  - [flutter_svg](pub.dev/packages/flutter_svg)
-  - [connectivity](pub.dev/packages/connectivity)
+  - [http](https://pub.dev/packages/http)
+  - [flutter_bloc](https://pub.dev/packages/flutter_shimmer)
+  - [flutter_shimmer](https://pub.dev/packages/flutter_shimmer)
+  - [flutter_svg](https://pub.dev/packages/flutter_svg)
+  - [connectivity](https://pub.dev/packages/connectivity)
 
