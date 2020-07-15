@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
-import 'search_screen.dart';
+import 'search/screen.dart';
+import 'search/bloc.dart';
 
 class YoutubeApp extends StatelessWidget {
   @override

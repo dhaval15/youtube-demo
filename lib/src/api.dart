@@ -2,11 +2,11 @@ import 'dart:io';
 
 import 'models.dart';
 import 'package:http/http.dart' as http;
-import 'response.dart';
+import 'utils/response.dart';
 import 'dart:convert' as convert;
 
 const GOOGLE_APIS = 'www.googleapis.com';
-const API_KEY = 'Paste your api key here';
+const API_KEY = 'Paste Api key here';
 
 Uri searchUrl(dynamic options) =>
     Uri.https(GOOGLE_APIS, 'youtube/v3/search', options);
@@ -14,13 +14,11 @@ Uri searchUrl(dynamic options) =>
 Future<Response<List<YoutubeSearchResult>>> search(
   String query, {
   int maxResults = 10,
-  String nextPageToken,
 }) async {
   final url = searchUrl({
     'q': query,
     'key': API_KEY,
     'maxResults': maxResults.toString(),
-    'nextPageToken': nextPageToken,
     'part': 'snippet',
   });
   try {
