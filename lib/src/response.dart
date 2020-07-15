@@ -8,5 +8,5 @@ class Response<T> {
 
   factory Response.failure(error) => Response._(null, error);
 
-  bool get isSuccessful => error != null;
+  bool get isSuccessful => error == null;
 }
