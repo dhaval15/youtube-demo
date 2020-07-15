@@ -61,12 +61,6 @@ class SearchBloc extends Bloc<SearchEvent, SearchState> {
             cachedResults: state.cachedResults,
           );
         }
-        /*} else if (event.query.length > 0) {
-        yield SearchState(
-          event: SearchStateEvent.resultsFound,
-          results: [],
-          cachedResults: state.cachedResults,
-        );*/
       } else {
         yield SearchState(
           event: SearchStateEvent.empty,
